@@ -1,0 +1,130 @@
+.navbar {
+    height: 80px;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+
+
+.menuIcon svg {
+    display: none;
+}
+
+.navbar__left {
+    height: 100%;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+.navbar__left img {
+    height: 50px;
+    width: auto;
+}
+
+.hiddenBar {
+    display: none;
+}
+
+.navbar__right {
+    height: 100%;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.navbar__right img {
+    height: 30px;
+    width: auto;
+}
+
+.navbar__right img:hover {
+    cursor: pointer;
+}
+
+.navbar__right a {
+    text-decoration: none;
+    color: black;
+    margin: 3%;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar__right a:hover {
+
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding-top: 1px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .hiddenBar {
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 100%;
+        width: 60vw;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar__right a {
+        display: none;
+    }
+
+    .navbar__right img {
+        display: none;
+    }
+
+    #close {
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+
+    #open {
+        transition: 0.5s;
+    }
+
+
+
+    .hiddenBar a {
+        margin-top: 10vh;
+    }
+
+    .hiddenBar svg {
+        position: fixed;
+        top: 5%;
+        right: 5%;
+    }
+
+    .hiddenBar img {
+        width: auto;
+        height: 30px;
+        margin-top: 10vh;
+    }
+
+    .menuIcon svg {
+        display: flex;
+        cursor: pointer;
+
+    }
+}

@@ -1,0 +1,111 @@
+.home {
+    padding-top: 80px;
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+}
+
+.home__right {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.home__right img {
+    height: 100vh;
+}
+
+.home__left {
+    width: 30%;
+    height: 100%;
+    padding-left: 10%;
+    padding-top: 50px;
+}
+
+.mobile {
+    display: none;
+}
+
+.home__left__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.home__left h1 {
+    font-size: 120px;
+    width: 100px;
+    text-align: left;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.home__left__container img {
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1600px) {
+    .home__left__container h1 {
+        font-size: 94px;
+    }
+}
+
+@media only screen and (max-width: 1350px) and (min-width: 1000px) {
+    .home__right img {
+        transform: translateX(30%);
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .home__right {
+        display: none;
+    }
+
+    .web {
+        display: none;
+
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .home__left {
+        background-image: url("../assets/Home\ image\ mobile.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        width: 100vw;
+        padding-left: 10%;
+    }
+
+    .home__left h1 {
+        color: white;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    .home__left h1 {
+        width: 80%;
+        font-size: 20vw;
+    }
+}
